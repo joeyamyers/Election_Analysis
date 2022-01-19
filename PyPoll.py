@@ -26,14 +26,14 @@ with open(file_to_load) as election_data:
    
     # read and print the header row
     headers = next(file_reader)
-    print(headers)
+    #print(headers)
 
     #print ea row in csv file
     for row in file_reader:
-        # add to the total vote count
+        # add to the total vote count, every iteration will add 1 to total votes
         total_votes += 1
        
-        # print the candidate name from each row
+        # assign var to equal row
         candidate_name = row[2]
         
         # add candidate name to candidate options list
@@ -60,7 +60,7 @@ with open(file_to_save, "w") as txt_file:
     # Determine percentage of votes per candidate by looping through the counts
     # loop through the candidate list
     for candidate_name in candidate_votes:
-        # retreieve vote count of each candidate
+        # retreive vote count of each candidate
         votes = candidate_votes[candidate_name]
         # calculate percentage of votes and convert to floats
         vote_percentage = (float(votes)/float(total_votes)) * 100
