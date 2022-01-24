@@ -9,7 +9,6 @@ The Colorado Board of Elections has asked me to complete an audit of the tabulat
 4. Calculate the percentage of votes each candidate won
 5. Determine the winner of the election based on popular vote
 
-
 ### Resources
 - Data Source: election_results.csv
 - Software: Python 3.9.7, Visual Studio Code, 1.63.2
@@ -38,14 +37,13 @@ The election committee has asked for the following additional information:
  3. The county with the highest turnout.
 
 ### Election-Audit Additional Results
-The additional analysis of the election revealed:
 1. The county results were:
-    - Arapahoe which received 6.7% of the voter turnout and 24,801 votes.
-    - Denver which received 82.8% of the voter turnout and 306,055 votes.
-    - Jefferson which received 10.5% of the voter turnout and 38,855 votes.
+    - Arapahoe received 6.7% of the voter turnout and 24,801 votes.
+    - Denver received 82.8% of the voter turnout and 306,055 votes.
+    - Jefferson received 10.5% of the voter turnout and 38,855 votes.
 
 2. The county with the highest turnout was:
     - Denver which received 82.8% of the voter turnout and 306,055 votes.
 
 ### Election-Audit Summary
-This script completed the election audit of this Congressional precinct, but arguably could be now used for any election given a few modifications. The first modification would be to ...
+This script completed the election audit of this Congressional precinct, but arguably could be now used for any election given a few modifications. The key to its versatility is that it was not hardcoded to include the specific county or candidate names for this given election. For a larger-scale election, this script could be modified to include information regarding voter turnout on the state or national level. It could also be modified to be a non-political election script and used for elections of all kinds.
